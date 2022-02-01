@@ -1,0 +1,22 @@
+<script>
+  //   function sum(a, b) {
+  //     console.log(a + b);
+  //   }
+
+  //   sum(1, 2, 3, 4, 5);
+
+  // es6
+  function sum(...ARR) {
+    console.log(ARR[3] + ARR[1]);
+    console.log(ARR.length);
+    console.log(ARR);
+    console.log(...ARR);
+    let total = 0;
+    for (let i of ARR) {
+      total += i;
+    }
+    console.log(total);
+  }
+
+  sum(1, 2, 3, 4, 5);
+</script>

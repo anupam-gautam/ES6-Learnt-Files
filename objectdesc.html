@@ -1,0 +1,22 @@
+<script>
+  const bioData = {
+    name: "Anupam",
+    age: 26,
+    degree: "Bsc",
+    hobby: {
+      first: "playing",
+      second: "coding",
+    },
+  };
+  //   let name, abc, degree;
+  // const { name, age: abc, degree } = bioData;
+  // console.log(abc);
+  //   console.log(`My age is ${top3}`);
+
+  // let name, age, degree;
+  // ({ name, age, degree: nage } = bioData);
+  // console.log(nage);
+
+  let { name, age, degree, hobby: h } = bioData;
+  console.log(h.first);
+</script>

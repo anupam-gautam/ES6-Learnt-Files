@@ -1,0 +1,15 @@
+<script>
+  let word = "Rampur";
+  let scramble = (word) => {
+    word = word.split("");
+    console.log(word);
+    for (let i = word.length - 1; i >= 0; i--) {
+      let temp = word[i];
+      let ran = Math.floor(Math.random() * i + 1);
+      word[i] = word[ran];
+      word[ran] = temp;
+    }
+    console.log(word);
+  };
+  Sword = scramble(word);
+</script>
